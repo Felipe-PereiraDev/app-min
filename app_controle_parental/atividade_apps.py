@@ -39,7 +39,7 @@ def listar_janelas_abertas():
 
 
 def salvar_no_bd(token, processo, hora_abertura):
-    api_url = f"http://localhost:8080/user/f/apps-abertos"
+    api_url = f"https://b05d-2804-29c4-198-5f00-2d65-35b6-4433-9e78.ngrok-free.app/user/f/apps-abertos"
 
     # Ajuste o formato da hora_inicio para o padrão ISO 8601
     hora_inicio_iso = datetime.strptime(hora_abertura, "%Y-%m-%d %H:%M:%S").isoformat()
@@ -69,7 +69,7 @@ def salvar_no_bd(token, processo, hora_abertura):
 
 
 def remover_janelas_bd(token, processo):
-    api_url = f"http://localhost:8080/user/f/apps-atualizar"
+    api_url = f"https://b05d-2804-29c4-198-5f00-2d65-35b6-4433-9e78.ngrok-free.app/user/f/apps-atualizar"
 
     # Ajuste o formato da hora_inicio para o padrão ISO 8601
 

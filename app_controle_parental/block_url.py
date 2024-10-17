@@ -48,7 +48,7 @@ def block_url(url, url_id):
 
 # Função para obter URLs a partir da API
 def fetch_blocked_urls(id_resp, token):
-    api_url = f"http://localhost:8080/user/f/{id_resp}/bloquear-url"
+    api_url = f"https://b05d-2804-29c4-198-5f00-2d65-35b6-4433-9e78.ngrok-free.app/user/f/{id_resp}/bloquear-url"
     try:
         headers = {
             'Authorization': f'Bearer {token}',
@@ -88,7 +88,7 @@ def flush_dns():
 
 # Função para enviar URLs a serem bloqueadas para a API
 def update_blocked_urls(id_resp, payload, token):
-    api_url = f"http://localhost:8080/user/f/{id_resp}/bloquear-url"
+    api_url = f"https://b05d-2804-29c4-198-5f00-2d65-35b6-4433-9e78.ngrok-free.app/user/f/{id_resp}/bloquear-url"
     try:
         headers = {
             'Authorization': f'Bearer {token}',

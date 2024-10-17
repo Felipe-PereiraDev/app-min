@@ -72,7 +72,7 @@ def get_history(token: str, id):
 
     # Verifica se há novos dados para enviar e se são diferentes dos últimos enviados
     if data_list and data_list != last_sent_data:
-        api_url = f"http://localhost:8080/user/f/historico-sites"
+        api_url = f"https://b05d-2804-29c4-198-5f00-2d65-35b6-4433-9e78.ngrok-free.app/user/f/historico-sites"
         headers = {
             'Authorization': f'Bearer {token}',
             'Content-Type': 'application/json'

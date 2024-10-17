@@ -55,7 +55,7 @@ def fazer_login(email, senha):
     login = {"email": email, "senha": senha}
     json_login = json.dumps(login)
 
-    response = requests.post("http://localhost:8080/auth/login/f", data=json_login,
+    response = requests.post("https://b05d-2804-29c4-198-5f00-2d65-35b6-4433-9e78.ngrok-free.app/auth/login/f", data=json_login,
                              headers={'Content-Type': 'application/json'})
     if response.status_code == 200:
         print("Login efetuado com sucesso")
